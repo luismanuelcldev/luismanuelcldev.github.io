@@ -1,9 +1,6 @@
 "use client";
 
-import { useRef } from "react";
-import { Metadata } from "next";
 import Image from "next/image";
-import PortfolioItem from "@/components/PortfolioItem";
 import PortfolioSection from "@/components/PortfolioSection";
 import { portfolios } from "@/constants";
 

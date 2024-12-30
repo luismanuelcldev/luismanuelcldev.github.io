@@ -1,7 +1,7 @@
 "use client";
 import { portfolios } from "@/constants";
 import { useWindowSize } from "@/hooks/useWindowSize";
-import { ChevronDown, ChevronRight, ChevronLeft } from "lucide-react";
+import { ChevronRight, ChevronLeft } from "lucide-react";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Swiper as SwiperType } from "swiper";
