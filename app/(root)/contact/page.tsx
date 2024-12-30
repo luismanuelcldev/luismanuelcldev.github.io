@@ -1,3 +1,5 @@
+"use client"
+
 // filepath: /C:/Users/LUIS MANUEL/Documents/Development/portfolio/app/(root)/contact/page.tsx
 import { useState } from 'react';
 import FaqsSection from "@/components/FaqsSection";
