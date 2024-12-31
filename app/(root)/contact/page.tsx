@@ -7,7 +7,7 @@ import React, { useEffect } from "react";
 
 const Page = () => {
     useEffect(() => {
-        document.title = "Contacto - Luis Manuel De La Cruz L.";
+        document.title = "Contacto - Luis Manuel De La Cruz L";
     }, []);
 
     return (
