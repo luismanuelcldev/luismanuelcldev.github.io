@@ -1,26 +1,29 @@
-// filepath: /C:/Users/LUIS MANUEL/Documents/Development/portfolio/pages/api/contact.ts
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { Resend } from 'resend';
 import dotenv from 'dotenv';
+import { EmailTemplate } from '@/components/email-template';
 
 dotenv.config();
 
-const resend = new Resend(process.env.API_KEY_EMAIL);
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
     if (req.method === 'POST') {
         const { name, surname, email, phone, message } = req.body;
 
-        const emailData = {
-            from: 'ledesmadelacruzluismanuel@gmail.com',
-            to: 'ledesmadelacruzluismanuel@gmail.com',
-            subject: `Nuevo mensaje de ${name} ${surname}`,
-            html: `<h1>Nuevo mensaje de ${name} ${surname}</h1><p><strong>Email:</strong> ${email}</p><p><strong>Teléfono:</strong> ${phone}</p><p><strong>Mensaje:</strong> ${message}</p>`,
-        };
-
         try {
-            await resend.emails.send(emailData);
-            res.status(200).json({ message: 'Correo enviado exitosamente' });
+            const { data, error } = await resend.emails.send({
+                from: 'ledesmadelacruzluismanuel@gmail.com',
+                to: ['ledesmadelacruzluismanuel@gmail.com'],
+                subject: `Nuevo mensaje de ${name} ${surname}`,
+                react: EmailTemplate({ name, surname, email, phone, message }),
+            });
+
+            if (error) {
+                return res.status(400).json(error);
+            }
+
+            res.status(200).json(data);
         } catch (error) {
             res.status(500).json({ message: 'Error al enviar el correo', error });
         }

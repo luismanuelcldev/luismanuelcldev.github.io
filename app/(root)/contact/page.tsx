@@ -3,11 +3,41 @@
 import FaqsSection from "@/components/FaqsSection";
 import { socialLinks } from "@/constants";
 import Image from "next/image";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 const Page = () => {
+    const [formData, setFormData] = useState({
+        name: '',
+        surname: '',
+        email: '',
+        phone: '',
+        message: '',
+    });
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        const { name, value } = e.target;
+        setFormData({ ...formData, [name]: value });
+    };
+
+    const handleSubmit = async (e: React.FormEvent) => {
+        e.preventDefault();
+        try {
+            const response = await fetch('/api/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            });
+            const result = await response.json();
+            alert(result.message);
+        } catch {
+            alert('Error al enviar el formulario');
+        }
+    };
+
     useEffect(() => {
-        document.title = "Contacto - Luis Manuel De La Cruz L";
+        document.title = "Contacto - Luis Manuel De La Cruz L.";
     }, []);
 
     return (
@@ -56,16 +86,16 @@ const Page = () => {
                     </div>
                 </div>
                 <div className="box w-full">
-                    <form action="" className="space-y-5">
+                    <form onSubmit={handleSubmit} className="space-y-5">
                         <div className="flex gap-5 max-tablet:flex-col">
-                            <input type="text" placeholder="Nombre" />
-                            <input type="text" placeholder="Apellido" />
+                            <input type="text" name="name" placeholder="Nombre" value={formData.name} onChange={handleChange} />
+                            <input type="text" name="surname" placeholder="Apellido" value={formData.surname} onChange={handleChange} />
                         </div>
                         <div className="flex gap-5 max-tablet:flex-col">
-                            <input type="text" placeholder="Email" />
-                            <input type="text" placeholder="Telefono" />
+                            <input type="email" name="email" placeholder="Email" value={formData.email} onChange={handleChange} />
+                            <input type="text" name="phone" placeholder="Telefono" value={formData.phone} onChange={handleChange} />
                         </div>
-                        <textarea placeholder="Mensaje" className="min-h-[200px]"></textarea>
+                        <textarea name="message" placeholder="Mensaje" className="min-h-[200px]" value={formData.message} onChange={handleChange}></textarea>
                         <button type="submit" className="btn btn-primary">Enviar</button>
                     </form>
                 </div>
