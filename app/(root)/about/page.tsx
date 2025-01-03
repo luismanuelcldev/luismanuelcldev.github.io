@@ -33,8 +33,9 @@ const page = () => {
                         </p>
                         <h1 className="text-grey-700">¡Hola! Soy Luis Manuel De La Cruz Ledesma</h1>
                         <p className="text-grey-600 text-justify">
-                             desarrollador de software con amplios conocimientos y experiencia en Front-end, Back-end e Ingeniería de Software. Me enfoco en crear experiencias impactantes que combinen diseño y funcionalidad, a través de mis habilidades en UX y UI.
-                             💡 Me caracteriza una profunda pasión por el aprendizaje continuo y el trabajo con diversas tecnologías, especialmente aquellas que aportan soluciones prácticas a problemas del mundo real.
+                            Desarrollador De Software con amplios conocimientos y experiencia en Front-end, Back-end e Ingeniería de Software, cursando la etapa final de la carrera de Desarrollo de Aplicaciones Multiplataformas en el Centro de Tecnología y Educación Permanente de la Pontificia Universidad Católica Madre y Maestra (TEP PUCMM). Cuento con sólida experiencia en desarrollo Frontend y Backend, destacándome por mi capacidad de liderazgo, pensamiento analítico y resolución creativa de problemas.
+                            Destaco por mi habilidad para trabajar eficientemente en equipos multidisciplinarios, adaptabilidad rápida a nuevas tecnologías y compromiso con el aprendizaje continuo. Mi comunicación efectiva y orientación al detalle me permiten traducir requisitos complejos en soluciones técnicas elegantes y escalables.
+
                         </p>
                     </div>
 

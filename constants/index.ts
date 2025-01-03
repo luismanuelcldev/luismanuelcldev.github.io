@@ -105,7 +105,7 @@ export const portfolios = [
             "/images/portfolio-4.png",
         ],
     },
-    
+
 ];
 
 export const faqs = [
@@ -206,10 +206,10 @@ export const timeline = [
         title: "Desarrollador Backend (Contrato de Prácticas - Remoto)",
         duration: "(Septiembre  2024 – Noviembre 2024)",
         description: {
-            line1: "- Responsable del desarrollo y optimización de sistemas internos y bases de datos.",
-            line2: "- Implementación de aplicaciones utilizando Express.js y el patrón de diseño MVC, garantizando aplicaciones robustas y bien estructuradas.",
-            line3: "- Utilización de Node.js para crear soluciones eficientes y escalables.",
-            line4: "- Gestión del control de versiones con GIT, facilitando una colaboración eficiente y un desarrollo ordenado a lo largo del ciclo de vida del software.",
+            line1: "- Optimicé bases de datos relacionales, logrando una mejora del 40% en el rendimiento de las consultas, optimicé consultas SQL complejas y diseñé esquemas de bases de datos escalables, implementando procedimientos almacenados y mecanismos de indexación avanzados.",
+            line2: "- Diseñé e implementé APIs RESTful utilizando Express.js bajo una arquitectura MVC, incorporando principios SOLID y patrones de diseños para garantizar la mantenibilidad y escalabilidad del código.",
+            line3: "- Implementé sistemas de autenticación y autorización robustos utilizando JWT, asegurando la protección de datos sensibles y el cumplimiento de estándares de seguridad.",
+            line4: "- Desarrollé middlewares personalizados para el manejo de errores, validación de datos y transformación de respuestas, mejorando la robustez y mantenibilidad del código.",
         },
         location: "CYCLOPESOFT SOLUTIONS S.R.L, Santo Domingo, D.N. República Dominicana."
     },

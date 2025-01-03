@@ -21,11 +21,9 @@ const Page = () => {
                         </p>
                         <h1 className="text-grey" data-aos="fade-down" data-aos-delay="100">¡Bienvenidos a mi portafolio!</h1>
                         <p className="text-grey-600 text-justify" data-aos="fade-down" data-aos-delay="200">
-                            Mi nombre es Luis Manuel De La Cruz, estudiante en etapa final de la carrera de Desarrollo de Aplicaciones Multiplataformas en el Centro de Tecnología y Educación
-                            Permanente de la Pontificia Universidad Católica Madre y Maestra (TEP PUCMM). Me caracteriza una profunda pasión por el aprendizaje continuo y
-                            el trabajo con diversas tecnologías, especialmente aquellas que aportan soluciones prácticas a problemas del mundo real. Actualmente, me especializo en el
-                            desarrollo backend utilizando Express.js y estoy incursionando en el desarrollo frontend con React (v18+). Además, disfruto compartir mis conocimientos
-                            como mentor, guiando y asesorando a niños que inician en el fascinante mundo de la tecnología.
+                            Mi nombre es Luis Manuel De La Cruz, Desarrollador de Software en formación, cursando la etapa final de la carrera de Desarrollo de Aplicaciones Multiplataformas en el Centro de Tecnología y Educación Permanente de la Pontificia Universidad Católica Madre y Maestra (TEP PUCMM). Cuento con sólida experiencia en desarrollo Frontend y Backend, destacándome por mi capacidad de liderazgo, pensamiento analítico y resolución creativa de problemas.
+
+
                         </p>
 
                     </div>
