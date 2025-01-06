@@ -67,7 +67,7 @@ export const skills = [
 export const portfolios = [
     {
         id: 1,
-        title: "App Web de Gestión de Cursos",
+        title: "Aplicacion Web de Gestión de Cursos",
         link: "https://github.com/luismanuelcldev/ApicacionWeb_GestionDeCursos",
         images: [
             "/images/portfolio-1.png",
@@ -87,7 +87,7 @@ export const portfolios = [
     },
     {
         id: 3,
-        title: "REST API Robusta - Prisma ORM",
+        title: "API REST Robusta - Prisma ORM",
         link: "https://github.com/luismanuelcldev/ORM_REST_API",
         images: [
             "/images/portfolio-3.png",
@@ -97,12 +97,22 @@ export const portfolios = [
     },
     {
         id: 4,
-        title: "RESTful API para Gestión de Vehículos",
+        title: "API RESTful para Gestión de Vehículos",
         link: "https://github.com/luismanuelcldev/APIREST_NodejsExpressjs_CRUD",
         images: [
             "/images/portfolio-4.png",
             "/images/portfolio-4.png",
             "/images/portfolio-4.png",
+        ],
+    },
+    {
+        id: 5,
+        title: "Aplicacion Web de Reciclaje | React - En Desarrollo",
+        link: "https://github.com/luismanuelcldev/app-reciclaje",
+        images: [
+            "/images/portfolio-5.png",
+            "/images/portfolio-5.png",
+            "/images/portfolio-5.png",
         ],
     },
 
